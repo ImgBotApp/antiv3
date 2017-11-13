@@ -1,18 +1,16 @@
 # Ignore everything in the root except the "wp-content" directory.
 /*
-!.gitignore
-!wp-content/
+
+wp-content/*/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
-wp-content/*
 # keep plugins
-!wp-content/plugins/
+!wp-content/plugins/*/
 
 # keep main themes
-!wp-content/themes/antillectual/
-!wp-content/themes/twentyfifteen/
-
+!wp-content/themes/antillectual/*/
+!wp-content/themes/twentyfifteen/*/
 
 # ignore unimportant files
 .DS_Store
@@ -23,7 +21,7 @@ wp-content/*
 .Trashes
 .svn
 Icon?
-ehthumbs.db
+thumbs.db
 Thumbs.db
 .idea/
 _work/

@@ -1,0 +1,29 @@
+image: dn/php-test-55:latest
+
+stages:
+  - test
+  - deploy
+
+phplint:
+  stage: test
+  script:
+    - (! (find . -type f -name "*.php" ! -name ".phpstorm.meta.php" ! -name "_ide_helper.php" ! -path "./public/wp-content/themes/antillectual/vendor/*" ! -path "./public/wp-content/plugins/*" -print0 | xargs -0 -n1 -P8 php -l | grep -v 'No syntax errors'))
+
+job_deploy_staging:
+  image: dn/node-build-56:latest
+  stage: deploy
+  script:
+    - php deployer.phar deploy staging -v
+  only:
+    - stage/staging
+
+
+#
+#phpunit55:
+#  image: dn/php-test-55:latest
+#  services:
+#    - mysql:latest
+#  stage: test
+#  script:
+#    - php vendor/bin/phpunit --colors --coverage-text
+#  allow_failure: true

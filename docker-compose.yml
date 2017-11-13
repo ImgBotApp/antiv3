@@ -1,0 +1,58 @@
+version: "2"
+services:
+  nginx:
+    image: nginx:alpine
+    expose:
+      - "80"
+    volumes:
+      - ./docker/conf/nginx/:/etc/nginx/conf.d:cached
+      - ./:/var/www/html:cached
+      - "${EZDEV_PATH}/.docker/certs:/etc/nginx/conf.d/certs:cached"
+    depends_on:
+      - redis
+      - mysql
+      - php
+      - mail
+    environment:
+      - VIRTUAL_HOST=antillectual.dev
+      - VIRTUAL_PROTO=https
+      - CERT_NAME=ssl
+    labels:
+      nl.tsdme.tag: dev
+  php:
+    build: ./docker/images/php
+    expose:
+      - "9000"
+    volumes:
+      - ./:/var/www/html:cached
+    labels:
+      nl.tsdme.tag: dev
+    environment:
+      XDEBUG_HOST: ${XDEBUG_HOST}s
+  mysql:
+    image: mysql
+    expose:
+      - "3306"
+    ports:
+      - "3306"
+    volumes:
+      - ./docker/data/mysql:/var/lib/mysql/
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: antillectual
+    labels:
+      nl.tsdme.tag: dev
+  redis:
+    image: redis:3.2-alpine
+    expose:
+      - "6379"
+    labels:
+      nl.tsdme.tag: dev
+  mail:
+    image: mailhog/mailhog
+    expose:
+      - "1025"
+    ports:
+      - "8025"
+    labels:
+      nl.tsdme.tag: dev

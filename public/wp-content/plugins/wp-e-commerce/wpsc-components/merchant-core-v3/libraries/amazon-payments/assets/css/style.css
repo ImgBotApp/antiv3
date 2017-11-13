@@ -1,0 +1,45 @@
+#pay_with_amazon {
+	display: inline-block;
+	border: 0;
+	float: left;
+}
+
+.wpsc-alert #pay_with_amazon {
+	float: right;
+	position: relative;
+	bottom: 4px;
+}
+
+#pay_with_amazon img {
+	width: auto !important;
+	vertical-align: middle;
+	cursor: pointer;
+	box-shadow: none;
+	border: 0;
+	padding:0;
+	margin:0;
+	display: block;
+}
+#amazon_addressbook_widget, #amazon_wallet_widget {
+    height: 228px;
+    width: 350px;
+    margin: 15px auto;
+}
+
+/* Hides entire payment method area, specifically for EU regulations, but not unhelpful for others. */
+div.wpsc-payment-method div:not(.wpsc-form-actions),
+div.wpsc-payment-method p {
+    display: none;
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 768px) {
+	#amazon_addressbook_widget, #amazon_wallet_widget {
+        width: 100%;
+    }
+}
+
+.wpsc-controller-payment #amazon_addressbook_widget,
+.wpsc-controller-payment #amazon_wallet_widget {
+	height: 150px;
+}

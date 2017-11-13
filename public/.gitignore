@@ -1,0 +1,39 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+# keep plugins
+!wp-content/plugins/
+
+wp-content/themes/*
+
+# keep main themes
+!wp-content/themes/antillectual/
+!wp-content/themes/twentyfifteen/
+
+
+# ignore unimportant files
+.DS_Store
+.DS_Store?
+.TemporaryItems
+._*
+.Spotlight-V100
+.Trashes
+.svn
+Icon?
+ehthumbs.db
+Thumbs.db
+.idea/
+_work/
+
+public/.htaccess
+
+/node_modules/
+
+*.log
+sitemap.xml
+sitemap.xml.gz

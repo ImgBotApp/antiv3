@@ -1,0 +1,489 @@
+[
+    {
+        "name": "cbschuld/browser.php",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cbschuld/Browser.php.git",
+            "reference": "45f4e96082c1b63357088f2204cc544574c713cf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cbschuld/Browser.php/zipball/45f4e96082c1b63357088f2204cc544574c713cf",
+            "reference": "45f4e96082c1b63357088f2204cc544574c713cf",
+            "shasum": ""
+        },
+        "time": "2015-02-09 13:43:55",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "lib/Browser.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Schuld",
+                "email": "chris@chrisschuld.com",
+                "homepage": "http://chrisschuld.com"
+            }
+        ],
+        "homepage": "http://chrisschuld.com/projects/browser-php-detecting-a-users-browser-from-php.html",
+        "keywords": [
+            "browser",
+            "detection",
+            "user agent"
+        ]
+    },
+    {
+        "name": "erusev/parsedown",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/erusev/parsedown.git",
+            "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/erusev/parsedown/zipball/3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+            "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+            "shasum": ""
+        },
+        "time": "2015-10-04 16:44:32",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Parsedown": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Emanuil Rusev",
+                "email": "hello@erusev.com",
+                "homepage": "http://erusev.com"
+            }
+        ],
+        "description": "Parser for Markdown.",
+        "homepage": "http://parsedown.org",
+        "keywords": [
+            "markdown",
+            "parser"
+        ]
+    },
+    {
+        "name": "xrstf/composer-php52",
+        "version": "v1.0.19",
+        "version_normalized": "1.0.19.0",
+        "source": {
+            "type": "hg",
+            "url": "https://bitbucket.org/xrstf/composer-php52",
+            "reference": "9a4a9c46d0347b39bf9159815301dc66fc25324e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://bitbucket.org/xrstf/composer-php52/get/9a4a9c46d0347b39bf9159815301dc66fc25324e.zip",
+            "reference": "9a4a9c46d0347b39bf9159815301dc66fc25324e",
+            "shasum": ""
+        },
+        "time": "2015-10-01 14:11:58",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-default": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "xrstf\\Composer52": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "homepage": "http://www.xrstf.de/"
+    },
+    {
+        "name": "nesbot/carbon",
+        "version": "1.21.0",
+        "version_normalized": "1.21.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/briannesbitt/Carbon.git",
+            "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
+            "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "symfony/translation": "~2.6|~3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0|~5.0"
+        },
+        "time": "2015-11-04 20:07:17",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Carbon\\": "src/Carbon/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Brian Nesbitt",
+                "email": "brian@nesbot.com",
+                "homepage": "http://nesbot.com"
+            }
+        ],
+        "description": "A simple API extension for DateTime.",
+        "homepage": "http://carbon.nesbot.com",
+        "keywords": [
+            "date",
+            "datetime",
+            "time"
+        ]
+    },
+    {
+        "name": "mexitek/phpcolors",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mexitek/phpColors.git",
+            "reference": "629eb54bf7f920529c815fd5f85b5af9651ae9f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mexitek/phpColors/zipball/629eb54bf7f920529c815fd5f85b5af9651ae9f0",
+            "reference": "629eb54bf7f920529c815fd5f85b5af9651ae9f0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "nette/tester": "~1.6"
+        },
+        "time": "2016-01-12 23:45:10",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Arlo Carreon",
+                "homepage": "http://arlocarreon.com",
+                "role": "creator"
+            }
+        ],
+        "description": "A series of methods that let you manipulate colors. Just incase you ever need different shades of one color on the fly.",
+        "homepage": "http://mexitek.github.com/phpColors/",
+        "keywords": [
+            "color",
+            "css",
+            "design",
+            "frontend",
+            "ui"
+        ]
+    },
+    {
+        "name": "composer/installers",
+        "version": "v1.0.23",
+        "version_normalized": "1.0.23.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+            "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "4.1.*"
+        },
+        "time": "2016-01-27 12:54:22",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Composer\\Installers\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "http://composer.github.com/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Hurad",
+            "MODX Evo",
+            "OXID",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "elgg",
+            "fuelphp",
+            "grav",
+            "installer",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lithium",
+            "magento",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "moodle",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "google/apiclient",
+        "version": "1.1.7",
+        "version_normalized": "1.1.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/google/google-api-php-client.git",
+            "reference": "400f250a30ae1dd4c4a0a4f750fe973fc70e6311"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/google/google-api-php-client/zipball/400f250a30ae1dd4c4a0a4f750fe973fc70e6311",
+            "reference": "400f250a30ae1dd4c4a0a4f750fe973fc70e6311",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*",
+            "squizlabs/php_codesniffer": "~2.3"
+        },
+        "time": "2016-02-02 18:50:42",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "description": "Client library for Google APIs",
+        "homepage": "http://developers.google.com/api-client-library/php",
+        "keywords": [
+            "google"
+        ]
+    },
+    {
+        "name": "symfony/polyfill-mbstring",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-mbstring.git",
+            "reference": "1289d16209491b584839022f29257ad859b8532d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
+            "reference": "1289d16209491b584839022f29257ad859b8532d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "suggest": {
+            "ext-mbstring": "For best performance"
+        },
+        "time": "2016-01-20 09:13:37",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Mbstring\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for the Mbstring extension",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "mbstring",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
+        "name": "symfony/translation",
+        "version": "v3.0.2",
+        "version_normalized": "3.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/translation.git",
+            "reference": "2de0b6f7ebe43cffd8a06996ebec6aab79ea9e91"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/translation/zipball/2de0b6f7ebe43cffd8a06996ebec6aab79ea9e91",
+            "reference": "2de0b6f7ebe43cffd8a06996ebec6aab79ea9e91",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "conflict": {
+            "symfony/config": "<2.8"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.8|~3.0",
+            "symfony/intl": "~2.8|~3.0",
+            "symfony/yaml": "~2.8|~3.0"
+        },
+        "suggest": {
+            "psr/log": "To use logging capability in translator",
+            "symfony/config": "",
+            "symfony/yaml": ""
+        },
+        "time": "2016-02-02 13:44:19",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Translation\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Translation Component",
+        "homepage": "https://symfony.com"
+    }
+]

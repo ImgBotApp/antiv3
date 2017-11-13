@@ -9,8 +9,6 @@ wp-content/*
 # keep plugins
 !wp-content/plugins/
 
-wp-content/themes/*
-
 # keep main themes
 !wp-content/themes/antillectual/
 !wp-content/themes/twentyfifteen/

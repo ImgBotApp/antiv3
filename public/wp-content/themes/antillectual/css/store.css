@@ -1,0 +1,122 @@
+.store-item {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.store-item a {
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+.store-item img {
+  width: 100%;
+  border: 5px solid #FFF;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.store-item .product-info {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  right: 15px;
+  bottom: 0px;
+  background-color: rgba(0,0,0,0.75);
+  color: #FFF;
+}
+
+.store-item a:hover > .product-info {
+  display: block;
+}
+
+.product-info {
+  font-size: 1.2em;
+  font-family: 'Bitter';
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.product-info strong,
+.product-info em {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.product-info strong {
+  top: 10%;
+  height: 30%;
+}
+
+.product-info em {
+  top: 40%;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: normal;
+}
+
+section#store div.product {
+  overflow-y: auto;
+  color: #CCC;
+}
+
+div.product div.related.products h2 {
+  color: #EFEFEF;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+div.product div.related.products {
+  clear: both;
+}
+
+section#store.single div.store-item.col-sm-3.col-xs-6 {
+  padding-left: 0px;
+}
+
+section#store.single .store-item .product-info {
+  left: 0px;
+}
+
+form.cart select,
+form.cart label {
+  font-size: 1.2em;
+}
+
+div.summary > div.description {
+  padding-top: 30px;
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+.woocommerce input.button.alt,
+.woocommerce input.button.alt:hover,
+button[type="submit"].button.alt,
+button[type="submit"].button.alt:hover {
+  background-color: #337ab7;
+  margin-left: 15px;
+}
+
+.woocommerce button[type="submit"][disabled="disabled"].button.alt,
+.woocommerce button[type="submit"][disabled="disabled"].button.alt:hover {
+  background-color: #666;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  font-size: 1.8em;
+  font-family: 'Bitter';
+  color: #EFEFEF;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.woocommerce .quantity .qty {
+  height: 2.2em;
+  color: #333;
+}
+
+.woocommerce .woocommerce-message {
+  color: #FFF;
+  background-color: #333;
+  border: 0px none;
+}

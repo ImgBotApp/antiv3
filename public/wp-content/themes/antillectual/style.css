@@ -1,0 +1,289 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+/*
+Theme Name:     Antillectual
+Theme URI:      http: //antillectual.com/
+Description:    Child theme for the Mainstream theme
+Author:         Riekus van Montfort
+Author URI:     http: //example.com/about/
+Template:       twentyfifteen
+Version:        0.1.0
+*/
+
+@import url("./css/shows.css");
+@import url("./css/social-links.css");
+@import url("./css/store.css");
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #333;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+body {
+  padding-top: 50px;
+  background-color: #000000;
+}
+
+body #bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0)
+}
+
+body .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 55%;
+  min-height: 55%;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  opacity: 0.5;
+}
+
+main {
+  position: relative;
+}
+
+section {
+  position: relative;
+}
+
+section h1.title,
+section h2.title,
+main.single-post h2 {
+  color: #EFEFEF;
+  padding-left: 15px;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+main.single-post h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#sidebar {
+  z-index: 100;
+}
+
+#site-navigation,
+.navbar-collapse.collapse.in,
+.menu-main-menu-container,
+.menu-secondary-menu-container {
+  background-color: #222222;
+}
+
+main article.hentry a,
+main.single-post .outer {
+  color: #CCC;
+}
+
+main.single-post {
+  margin-bottom: 100px;
+}
+
+main.single-post .inner {
+  padding: 15px;
+}
+
+main article.hentry {
+  background-color: #202020;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 3px;
+}
+
+main h2 {
+  padding-left: 15px;
+}
+
+img.size-full {
+  width: 100%;
+}
+
+section h1,
+section h2,
+nav > div,
+main.single-post h2,
+section div.inner,
+main div.inner,
+footer div.outer {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section#instagram {
+  margin-bottom: 35px;
+}
+
+section#instagram .inner {
+  padding-left: 15px;
+}
+
+section#video .outer,
+main.single-post .outer,
+section#instagram {
+  padding: 15px;
+  background-color: #222222;
+}
+
+section#music .outer {
+    padding-top: 15px;
+    width: 100%;
+    background-color: #303030;
+    background-image: url("./images/pine-trees.gif");
+}
+
+#music .inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#music .social-navigation a:link,
+#music .social-navigation a:visited {
+  color: #9d9d9d;
+}
+
+#music .social-navigation a:hover,
+#music .social-navigation a:focus {
+  color: #FFF;
+}
+
+#music div.inner > div {
+  margin-bottom: 15px;
+}
+
+section#music div.inner > div:nth-child(1),
+section#music div.inner > div:nth-child(3) {
+  /*padding-left: 0;*/
+}
+
+section#music div.inner > div:nth-child(2),
+section#music div.inner > div:nth-child(4) {
+  /*padding-right: 0;*/
+}
+
+#page h1,
+#page h2,
+#page h3,
+#site-navigation {
+  font-family: 'Bitter', serif;
+}
+
+section#store {
+  margin-bottom: 50px;
+}
+
+section#store .outer {
+  background-color: #222222;
+  background-image: url("./images/diagonal.gif");
+}
+
+section#store .inner {
+  padding: 30px 0px;
+}
+
+
+footer {
+  background-color: #222222;
+  color: #CCC;
+  padding-bottom: 15px;
+}
+
+footer a:focus,
+footer a:hover {
+  color: #FFF !important;
+}
+
+#partners {
+  background-color: rgba(60,60,60,0.6);
+}
+
+#partners .partners {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+#partners .partners a {
+  margin-right: 25px;
+}
+
+#partners .partners a img {
+  opacity: 0.6;
+  margin-bottom: 15px;
+  vertical-align: text-top;
+}
+
+#partners .partners a:hover img {
+  opacity: 0.9;
+}
+
+/**
+ * Bootstrap overrides
+ */
+
+
+ .site-header {
+   display: none;
+ }
+
+.navbar-static-top {
+  position: fixed;
+  width: 100%;
+  max-height: 50px;
+  top: 0;
+}
+
+
+nav > div.container-fluid {
+  padding-left: 0;
+}
+
+nav > div.container-fluid ul li {
+  font-size: 1.2em;
+}
+
+nav > div {
+    position: relative;
+}
+
+.carousel .carousel-caption {
+  padding-bottom: 50px;
+  width: 100%;
+  background-image: linear-gradient(to top,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  left: 0;
+  bottom: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.container-fluid.outer > .col-xs-4 {
+  padding-left: 0px;
+}
+
+#site-navigation .navbar-nav>li>a {
+  padding-bottom: 10px;
+}

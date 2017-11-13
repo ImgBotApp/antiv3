@@ -1,7 +1,8 @@
 # Ignore everything in the root except the "wp-content" directory.
 /*
-
-wp-content/*/
+*.log
+wp-content/
+node_modules/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
@@ -9,8 +10,11 @@ wp-content/*/
 !wp-content/plugins/*/
 
 # keep main themes
-!wp-content/themes/antillectual/*/
-!wp-content/themes/twentyfifteen/*/
+!wp-content/themes/antillectual/
+!wp-content/themes/antillectual/*
+!wp-content/themes/antillectual/**/*
+!wp-content/themes/twentyfifteen/
+!wp-content/themes/twentyfifteen/*
 
 # ignore unimportant files
 .DS_Store
@@ -27,8 +31,6 @@ Thumbs.db
 _work/
 
 public/.htaccess
-
-/node_modules/
 
 *.log
 sitemap.xml

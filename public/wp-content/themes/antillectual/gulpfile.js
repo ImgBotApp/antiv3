@@ -51,8 +51,8 @@ var config = {
    Main task. Run this by entering 'gulp' in the root of the theme (terminal).
    ========================================================================== */
 
-gulp.task('watch', ['less-theme', 'less-wp-admin', 'watchify', 'styleguide'], function () {
-    gulp.watch(config.assetDir + '/styles/theme/**/*.less', ['less-theme', 'styleguide']);
+gulp.task('watch', ['less-theme', /*'less-wp-admin',*/ 'watchify', /*'styleguide'*/], function () {
+    gulp.watch(config.assetDir + '/styles/theme/**/*.less', ['less-theme', /*'styleguide'*/]);
     // gulp.watch(config.assetDir + '/styles/wp-admin/**/*.less', ['less-wp-admin']);
     gulp.watch( '**/*.php').on('change', browserSync.reload);
 });
@@ -62,7 +62,7 @@ gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('disable-config', function () {
    config.debug = false;
 });
-gulp.task('less', ['less-theme', 'less-wp-admin']);
+gulp.task('less', ['less-theme', /*'less-wp-admin'*/]);
 gulp.task('build', ['disable-config', 'browserify', 'less']);
 
 /* ==========================================================================

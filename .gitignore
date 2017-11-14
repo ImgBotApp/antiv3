@@ -35,6 +35,7 @@ Thumbs.db
 _work
 *.log
 **/*.log
+**/*.map
 sitemap.xml
 sitemap.xml.gz
 .network

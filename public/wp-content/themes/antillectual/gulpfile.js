@@ -4,10 +4,6 @@
 |--------------------------------------------------------------------------
 |
 | Any automated tasks for this theme are specified here.
-|
-| @author       Lars Dol <lars@digitalnatives.nl>
-| @author       Ezra Pool <ezra@digitalnatives.nl>
-| @copyright (c), 2015 Digital Natives
 */
 
 'use strict';
@@ -86,7 +82,7 @@ function onBrowserifyError(err) {
    ========================================================================== */
 gulp.task('less-theme', function () {
     return gulp
-        .src(config.assetDir + '/styles/theme/theme.less')
+        .src(config.assetDir + '/styles/theme.less')
         .pipe(plumber(onError))
         .pipe(sourcemaps.init())
         .pipe(less({
@@ -130,7 +126,7 @@ gulp.task('less-theme', function () {
 gulp.task('watchify', function () {
     var opts = assign({}, watchify.args, {
         debug: config.debug,
-        entries: [config.assetDir + '/js/theme/theme.js']
+        entries: [config.assetDir + '/js/theme.js']
     });
     var watcher = watchify(browserify(opts)
         .transform(babelify.configure({
@@ -160,7 +156,7 @@ gulp.task('watchify', function () {
 gulp.task('browserify', function () {
     var opts = assign({}, watchify.args, {
         debug: config.debug,
-        entries: [config.assetDir + '/js/theme/theme.js']
+        entries: [config.assetDir + '/js/theme.js']
     });
     var b = browserify(opts)
         .transform(babelify.configure({

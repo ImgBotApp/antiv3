@@ -1,0 +1,41 @@
+.idea/
+_work/
+
+# ignore pretty much everything in public folder
+public/*
+public/wp-admin/*
+public/wp-includes/*
+public/wp-content/*
+
+# but don't ignore themes
+!public/wp-content/
+!public/wp-content/themes/
+!public/wp-content/themes/**/*
+
+# and don't ignore plugins
+!public/wp-content/plugins/
+!public/wp-content/plugins/**
+!public/wp-content/plugins/**/*
+
+*.log
+sitemap.xml
+sitemap.xml.gz
+
+# ignore unimportant files
+
+.DS_Store
+**/.DS_Store
+**/node_modules
+.Trashes
+.svn
+Icon?
+thumbs.db
+Thumbs.db
+.idea
+_work
+*.log
+**/*.log
+**/*.map
+sitemap.xml
+sitemap.xml.gz
+.network
